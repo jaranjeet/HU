@@ -6,7 +6,6 @@ class MainMailer < ApplicationMailer
   #   en.main_mailer.notify_question_author.subject
   #
   def notify_question_author(answer)
-    sleep 5
     @greeting = "Hi"
     @answer = answer
     mail to: answer.question.email, from: answer.email
