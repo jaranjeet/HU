@@ -19,7 +19,7 @@
         <div class="media-body">
           <h5 class="mt-0"><%= answer.email %> answered:</h5>
           <div> <%= time_ago_in_words answer.created_at %></div>
-          <%= truncate answer.body, length: 30 %>
+          <%= truncate answer.body, length: 300 %>
         </div>
       </div>
       <% end %>
