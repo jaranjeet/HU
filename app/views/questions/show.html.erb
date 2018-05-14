@@ -15,7 +15,7 @@
       <%= render 'home/new_answer_form' %>
       <% @question.answers.each do |answer| %>
       <div class="media">
-        <img class="mr-3" src=<%= asset_path('user') %> alt="Generic placeholder image" height="50px">
+        <img class="mr-3" src=<%= asset_path('user.png') %> alt="Generic placeholder image" height="50px">
         <div class="media-body">
           <h5 class="mt-0"><%= answer.email %> answered:</h5>
           <div> <%= time_ago_in_words answer.created_at %></div>
