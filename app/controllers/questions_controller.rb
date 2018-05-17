@@ -10,6 +10,7 @@ class QuestionsController < ApplicationController
   def show
     
     @question = Question.find(params[:id])
+    @answers = Answer.order(created_at: :desc).where("question_id = '#{@question.id}'")
   end
   private
   def question_params
